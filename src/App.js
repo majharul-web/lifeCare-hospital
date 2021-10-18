@@ -8,6 +8,7 @@ import './App.css';
 import Home from './components/Pages/Home/Home/Home';
 import Login from './components/Pages/Login/Login/Login';
 import NotFound from './components/Pages/NotFound/NotFound';
+import Footer from './components/Pages/Shared/Footer/Footer';
 import TopMenu from './components/Pages/Shared/TopMenu/TopMenu';
 import AuthProvider from './contexts/AuthProvider';
 
@@ -16,21 +17,22 @@ function App() {
     <div>
       <AuthProvider>
         <Router>
-          <TopMenu></TopMenu>
+          <TopMenu/>
           <Switch>
             <Route exact path='/'>
               <Home></Home>
             </Route>
             <Route exact path='/home'>
-              <Home></Home>
+              <Home/>
             </Route>
             <Route exact path='/login'>
-              <Login></Login>
+              <Login/>
             </Route>
             <Route exact path='*'>
-              <NotFound></NotFound>
+              <NotFound/>
             </Route>
           </Switch>
+          <Footer/>
         </Router>
       </AuthProvider>
     </div>

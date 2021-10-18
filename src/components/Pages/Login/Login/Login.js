@@ -4,13 +4,14 @@ import useAuth from '../../../../hooks/useAuth';
 
 
 const Login = () => {
-    const { user, singInUsingGoogle, userRegister, userLogin } = useAuth();
+    const { singInUsingGoogle, userRegister, userLogin } = useAuth();
 
     // all state
     const [name, setName] = useState('');
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [isRegister, setIsRegister] = useState(false)
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [isRegister, setIsRegister] = useState(false);
+    const [error, setError] = useState('');
 
     // get name
     const getName = (e) => {
@@ -39,16 +40,18 @@ const Login = () => {
 
         // password validation
         if (password.length < 6) {
-            console.log('please type 6 or longer password');
+            setError('please type 6 or longer password');
             return;
         }
 
         // manual user register/logIn process
         if (isRegister) {
             userLogin(email, password);
+            setError('')
         }
         else {
             userRegister(email, password, name);
+            setError('')
         }
 
 
@@ -101,7 +104,8 @@ const Login = () => {
                             </Form>
                         </div>
 
-                        <h3 className='text-center mt-2'>or</h3>
+                        <p className='text-center my-2 text-danger ' >{error}</p>
+                        <p className='text-center mt-2 text-primary fs-4'>or</p>
 
                         {/* social login */}
                         <div className="row my-3 ">
