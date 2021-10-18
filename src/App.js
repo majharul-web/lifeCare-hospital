@@ -6,10 +6,12 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from './components/Pages/Home/Home/Home';
+import Services from './components/Pages/Home/Services/Services';
 import Login from './components/Pages/Login/Login/Login';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Footer from './components/Pages/Shared/Footer/Footer';
 import TopMenu from './components/Pages/Shared/TopMenu/TopMenu';
+import SelectedService from './components/SelectedService/SelectedService';
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {
@@ -27,6 +29,12 @@ function App() {
             </Route>
             <Route exact path='/login'>
               <Login/>
+            </Route>
+            <Route exact path='/services'>
+              <Services/>
+            </Route>
+            <Route exact path='/service/:id'>
+              <SelectedService/>
             </Route>
             <Route exact path='*'>
               <NotFound/>
