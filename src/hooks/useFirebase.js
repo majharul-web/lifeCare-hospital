@@ -6,7 +6,7 @@ import {
     onAuthStateChanged,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    sendEmailVerification,
+    // sendEmailVerification,
     updateProfile
 } from "firebase/auth";
 import { useEffect, useState } from "react";

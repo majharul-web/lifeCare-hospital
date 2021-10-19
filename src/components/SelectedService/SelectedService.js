@@ -9,13 +9,11 @@ const SelectedService = () => {
     useEffect(() => {
         fetch('/services.json')
             .then(res => res.json())
-            .then(data => setServices(data))
+            .then(data => setServices(data));
     }, [])
 
 
-    const selectedService = services.find(service => service.id === parseInt(id))
-    console.log(selectedService);
-    // const { service, doctor, price, image } = selectedService;
+    const selectedService = services.find(service => service.id === parseInt(id));
 
     return (
         <div className='container p-5'>

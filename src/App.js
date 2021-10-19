@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import Career from './components/Pages/Career/Career';
 import Home from './components/Pages/Home/Home/Home';
 import Services from './components/Pages/Home/Services/Services';
 import Login from './components/Pages/Login/Login/Login';
@@ -38,6 +39,9 @@ function App() {
             <PrivateRoute exact path='/service/:id'>
               <SelectedService />
             </PrivateRoute>
+            <Route exact path='/career'>
+              <Career />
+            </Route>
             <Route exact path='*'>
               <NotFound />
             </Route>

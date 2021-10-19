@@ -28,7 +28,7 @@ const TopMenu = () => {
 
                             <Nav.Link as={Link} to="/about" active className='fw-bold  text-primary mx-2'>About Us</Nav.Link>
 
-                            <Nav.Link as={Link} to="/contact" active className='fw-bold  text-primary mx-2'>Contact Us</Nav.Link>
+                            <Nav.Link as={Link} to="/career" active className='fw-bold  text-primary mx-2'>Career</Nav.Link>
 
                             {
                                 user?.email ?
