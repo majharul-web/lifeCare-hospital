@@ -1,44 +1,44 @@
   [
     {
-        "id": "1",
+        "id":1,
         "service": "X-Ray",
         "doctor": "Md Rasel Ahmed",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "200"
+        "image":"https://i.ibb.co/1zCL3rk/x-ray.jpg",
+        "price":20
     },
     {
-        "id": "2",
+        "id": 2,
         "service": "Delivery",
         "doctor": "Miss Tahera Khatun",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "200"
+        "image":"https://i.ibb.co/bd3ymM3/child-delivery.jpg",
+        "price": 200
     },
     {
-        "id": "3",
+        "id": 3,
         "service": "Sergery",
         "doctor": "Md Anis Khandakar",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "450"
+        "image":"https://i.ibb.co/XCSxcxK/sergery.jpg",
+        "price": 450
     },
     {
-        "id": "4",
+        "id": 4,
         "service": "CT-Scan",
         "doctor": "Md Rasel Ahmed",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "200"
+        "image":"https://i.ibb.co/DrTzn7G/ct-scan.jpg",
+        "price": 200
     },
     {
-        "id": "5",
+        "id": 5,
         "service": "Blood test",
         "doctor": "Md Rubel mia",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "90"
+        "image":"https://i.ibb.co/1m4rnKT/bllod-test.jpg",
+        "price": 90
     },
     {
-        "id": "6",
+        "id": 6,
         "service": "Urin Test",
         "doctor": "Md Rubayet Ahmed",
-        "image":"https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-        "price": "80"
+        "image":"https://i.ibb.co/yNLN2Qv/urin-test.jpg",
+        "price": 80
     }
 ]

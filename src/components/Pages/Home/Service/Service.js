@@ -10,7 +10,7 @@ const Service = (props) => {
         <div className='col-md-4 col-sm-6 my-3'>
             <div className='py-2 service-shadow'>
                 <div className='text-center my-4'>
-                    <img src={image} alt='' className='img-fluid w-75' />
+                    <img src={image} alt='' className='img-fluid w-75 img-thumbnail' />
                 </div>
                 <div className='text-center my-3'>
                     <h5>{service}</h5>
