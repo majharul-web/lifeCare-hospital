@@ -39,9 +39,19 @@ const Footer = () => {
 
                     {/* footer about */}
                     <div className="col-md-4">
-                        <h4>Contact Us</h4>
-                        {/* <p>We have more than 30 practices and 300 allied health professionals across the country. Whether you’re an elite athlete or hoping to alleviate every day pain, we can support each step of your journey towards improved and injury-free movement</p> */}
-                        <h6> <span><i className="fas fa-phone"></i></span> 01747615357</h6>
+                        <h4>Contact Info</h4>
+                        <h6>
+                             <span>
+                                 <i className="fas fa-phone"></i>
+                            </span> 
+                            01747615357
+                        </h6>
+                        <h6>
+                            <span>
+                                 <i class="fas fa-envelope-square"></i>
+                            </span> 
+                            lifeCare.home@gmail.com
+                        </h6>
 
                         <div className='d-flex justify-content-evenly' style={{ fontSize: '2em' }}>
                             <i className='fab fa-facebook'></i>

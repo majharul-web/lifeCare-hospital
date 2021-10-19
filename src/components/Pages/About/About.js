@@ -9,7 +9,7 @@ const About = () => {
             .then((res) => res.json())
             .then((data) => setDoctors(data));
     }, []);
-   
+
 
     return (
         <section>
@@ -23,6 +23,9 @@ const About = () => {
 
                 <p>
                     <strong>Life Care</strong> started its journey in June 1983 and within few days due to its accuracy of the reports and quality of the service, Life Care became an unparallel symbol of reliability and trust from the end of respective doctors and the people of our country. To get any service and support from us, please contact us.
+                </p>
+                <p>
+                    We have more than 30 practices and 300 allied health professionals across the country. Whether you’re an elite athlete or hoping to alleviate every day pain, we can support each step of your journey towards improved and injury-free movement
                 </p>
                 <div>
                     <h3 className='text-primary my-5 '>Our Specialist Doctor</h3>

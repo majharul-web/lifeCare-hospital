@@ -1,44 +1,74 @@
   [
     {
+        "id":0,
+        "service": "Medicine",
+        "doctor": "Md Rafikul Alom",
+        "image":"https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "price":150,
+        "discription":"Mr Md Rafikul Alom is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
+    },
+    {
         "id":1,
         "service": "X-Ray",
         "doctor": "Md Rasel Ahmed",
         "image":"https://i.ibb.co/1zCL3rk/x-ray.jpg",
-        "price":20
+        "price":20,
+        "discription":"Mr Md Rasel Ahmed is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     },
     {
         "id": 2,
         "service": "Delivery",
         "doctor": "Miss Tahera Khatun",
         "image":"https://i.ibb.co/bd3ymM3/child-delivery.jpg",
-        "price": 200
+        "price": 200,
+        "discription":"Miss Tahera Khatun is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     },
     {
         "id": 3,
         "service": "surgery ",
         "doctor": "Md Anis Khandakar",
         "image":"https://i.ibb.co/XCSxcxK/sergery.jpg",
-        "price": 450
+        "price": 450,
+        "discription":"Mr Md Anis Khandakar is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     },
     {
         "id": 4,
         "service": "CT-Scan",
         "doctor": "Md Rasel Ahmed",
         "image":"https://i.ibb.co/DrTzn7G/ct-scan.jpg",
-        "price": 200
+        "price": 200,
+        "discription":"Mr Md Rasel Ahmed is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     },
     {
         "id": 5,
         "service": "Blood test",
         "doctor": "Md Rubel mia",
         "image":"https://i.ibb.co/1m4rnKT/bllod-test.jpg",
-        "price": 90
+        "price": 90,
+        "discription":"Mr Md Rubel mia is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     },
     {
         "id": 6,
         "service": "Urine Test",
         "doctor": "Md Rubayet Ahmed",
         "image":"https://i.ibb.co/yNLN2Qv/urin-test.jpg",
-        "price": 80
+        "price": 80,
+        "discription":"Mr Md Rubayet Ahmed is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
+    },
+    {
+        "id": 7,
+        "service": "Asthma",
+        "doctor": "Md Rezaul Karim",
+        "image":"https://images.pexels.com/photos/5858855/pexels-photo-5858855.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "price": 120,
+        "discription":"Mr Md Rezaul Karim is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
+    },
+    {
+        "id": 8,
+        "service": "Neurology",
+        "doctor": "Md Ali Hossain",
+        "image":"https://images.pexels.com/photos/5676744/pexels-photo-5676744.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "price": 120,
+        "discription":"Mr Md Ali Hossain is on of the Best Doctor in our Country.We are 100% sure ,Our service will be best. Hopefully ,you are staisfide"
     }
 ]

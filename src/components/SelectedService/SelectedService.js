@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 const SelectedService = () => {
@@ -22,11 +23,12 @@ const SelectedService = () => {
                 <div className='col-md-6 d-flex justify-content-center align-items-center border-3'>
                     <div>
                         <h3>{selectedService?.service}</h3>
-                        <p>{selectedService?.doctor}</p>
+                        <p className='fw-bold'>{selectedService?.doctor}</p>
                         <article>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit laboriosam soluta officia deserunt possimus hic odio voluptates quae, sequi, veritatis illo facilis minima quod! Inventore repellendus obcaecati molestiae, reiciendis temporibus optio rem natus itaque facilis sit officia laudantium nesciunt doloremque perspiciatis voluptas minus tempora eligendi rerum sequi impedit quia?
+                            {selectedService?.discription}
                         </article>
-                        <h3>${selectedService?.price}</h3>
+                        <h3 className='my-3 text-primary'>Cost: ${selectedService?.price}</h3>
+                        <Button variant='danger'>Book</Button>
                     </div>
                 </div>
                 <div className='col-md-6'>
