@@ -20,15 +20,13 @@ const useFirebase = () => {
 
     // all state here
     const [user, setUser] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
 
     // google sing in
     const singInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-            })
+        return signInWithPopup(auth, googleProvider)
+
     };
 
     // user resister
@@ -78,6 +76,7 @@ const useFirebase = () => {
 
     // logout
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
 
@@ -85,6 +84,7 @@ const useFirebase = () => {
             .catch((error) => {
                 console.log(error);
             })
+            .finally(() => setIsLoading(false));
     };
 
     // observe user
@@ -95,6 +95,7 @@ const useFirebase = () => {
             } else {
                 setUser({});
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
     }, []);
@@ -104,7 +105,8 @@ const useFirebase = () => {
         singInUsingGoogle,
         userRegister,
         userLogin,
-        logOut
+        logOut,
+        isLoading
     }
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../../hooks/useAuth';
 
 
@@ -58,6 +59,22 @@ const Login = () => {
     }
 
 
+    // ------------------redirect
+    const location = useLocation();
+    const history = useHistory();
+
+    // console.log("came from", location.state?.from);
+
+    const redirect_url = location.state?.from || "/home";
+
+    const handleGoogleSingIN = () => {
+        singInUsingGoogle().then((result) => {
+            history.push(redirect_url);
+            // console.log(result.user);
+        });
+    };
+
+
     return (
         <div className='container'>
 
@@ -110,7 +127,7 @@ const Login = () => {
                         {/* social login */}
                         <div className="row my-3 ">
                             <div className="col-md-6 text-center my-2 ">
-                                <Button variant="danger" onClick={singInUsingGoogle}>
+                                <Button variant="danger" onClick={handleGoogleSingIN}>
                                     <span className='mx-2'>
                                         <i className='fab fa-google'></i>
                                     </span>
