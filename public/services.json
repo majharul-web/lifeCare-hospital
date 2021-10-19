@@ -15,7 +15,7 @@
     },
     {
         "id": 3,
-        "service": "Sergery",
+        "service": "surgery ",
         "doctor": "Md Anis Khandakar",
         "image":"https://i.ibb.co/XCSxcxK/sergery.jpg",
         "price": 450
@@ -36,7 +36,7 @@
     },
     {
         "id": 6,
-        "service": "Urin Test",
+        "service": "Urine Test",
         "doctor": "Md Rubayet Ahmed",
         "image":"https://i.ibb.co/yNLN2Qv/urin-test.jpg",
         "price": 80

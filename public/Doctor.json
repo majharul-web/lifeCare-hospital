@@ -1,0 +1,70 @@
+
+   
+[
+    {
+      "id": 1010,
+      "doctor": "Md Majharul Islam",
+      "designation": "CHAIRMAN,MBBS,FCPS(Asthma)",
+      "image": "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.webp"
+    },
+    {
+      "id": 1000,
+      "doctor": "Md Tahabur Islam",
+      "designation": "MBBS,DMC(Altra-Specialist)",
+      "image": "https://t4.ftcdn.net/jpg/02/97/24/51/240_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar.jpg"
+    },
+    {
+      "id": 1001,
+      "doctor": "Md Rasel Ahmed",
+      "designation": "MBBS,SMC(X-Ray Specialist)",
+      "image": "https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    },
+    {
+      "id": 1002,
+      "doctor": "Md Mohosin Hasan",
+      "designation": "MBBS,MMC",
+      "image": "https://images.pexels.com/photos/2280551/pexels-photo-2280551.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    },
+    {
+      "id": 1003,
+      "doctor": "Md Munir Hasan",
+      "designation": "MBBS,AMC(surgery specialist)",
+      "image": "https://t3.ftcdn.net/jpg/02/68/77/20/240_F_268772018_c4jJBONUHzGqUF6m1lBOy44EMSEMb0e3.jpg"
+    },
+    {
+      "id":1004,
+      "doctor": "Md Rubayet Ahmed",
+      "designation": "MBBS,XMC(Pathology-specialist)",
+      "image": "https://t4.ftcdn.net/jpg/03/26/98/51/240_F_326985142_1aaKcEjMQW6ULp6oI9MYuv8lN9f8sFmj.jpg"
+    },
+    {
+      "id": 1005,
+      "doctor": "Md Ali Hossain",
+      "designation": "MBBS,DMC",
+      "image": "https://t4.ftcdn.net/jpg/03/07/33/81/240_F_307338115_ca0if1wY3FdmmgAqDsf7FKArM9o0TvWv.jpg"
+    },
+    {
+      "id": 1006,
+      "doctor": "Miss Tahera Khatun",
+      "designation": "MBBS,DMC(delivery-specialist)",
+      "image": "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    },
+    {
+      "id": 1007,
+      "doctor": "Md Sagor Hossain",
+      "designation": "MBBS,GMC",
+      "image": "https://t3.ftcdn.net/jpg/03/28/19/46/240_F_328194664_RKSHvMLgHphnD1nwQYb4QKcNeEApJmqa.jpg"
+    },
+    {
+      "id": 1008,
+      "doctor": "Md Zubayer Hossain",
+      "designation": "MBBS,SMC",
+      "image": "https://t4.ftcdn.net/jpg/00/88/53/89/240_F_88538986_5Bi4eJ667pocsO3BIlbN4fHKz8yUFSuA.jpg"
+    },
+    {
+      "id": 1009,
+      "doctor": "Md Rezaul Karim",
+      "designation": "MBBS,DMC(Asthma specialist)",   
+      "image": "https://t4.ftcdn.net/jpg/02/87/35/99/240_F_287359914_HU3P7rhmyJMyyhBBcILcWd2S7DDwkJSs.jpg"
+    }
+]
