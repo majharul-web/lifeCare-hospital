@@ -40,12 +40,12 @@ function App() {
             <PrivateRoute exact path='/service/:id'>
               <SelectedService />
             </PrivateRoute>
-            <Route exact path='/about'>
+            <PrivateRoute exact path='/about'>
               <About />
-            </Route>
-            <Route exact path='/career'>
+            </PrivateRoute>
+            <PrivateRoute exact path='/career'>
               <Career />
-            </Route>
+            </PrivateRoute>
             <Route exact path='*'>
               <NotFound />
             </Route>

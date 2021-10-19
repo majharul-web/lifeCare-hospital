@@ -4,7 +4,8 @@ import advanceImg from '../../../../images/advance.jpg'
 
 const Advance = () => {
     return (
-        <div className='pb-5'>
+        <div className='pb-5 container'>
+            <h3 className='text-primary py-3'>Advanced healthcare</h3>
             <div className="row">
                 <div className="col-md-6">
                     <div>

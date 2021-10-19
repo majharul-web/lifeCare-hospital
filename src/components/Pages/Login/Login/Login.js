@@ -80,12 +80,12 @@ const Login = () => {
 
             <div className="row">
                 <div className="col-md-7">
-                    <div className='w-75 '>
+                    <div className='w-75'>
 
                         <div className=''>
                             <h3 className='text-primary my-3 text-center'> {isRegister ? 'Please login' : 'Please Register'} </h3>
 
-                            <Form className='w-75 mx-auto' onSubmit={handleFormSubmit}  >
+                            <Form className=' mx-auto' onSubmit={handleFormSubmit}  >
 
                                 {/* name field */}
                                 {!isRegister &&
@@ -126,22 +126,14 @@ const Login = () => {
 
                         {/* social login */}
                         <div className="row my-3 ">
-                            <div className="col-md-6 text-center my-2 ">
+                            <div className="text-center my-2 ">
                                 <Button variant="danger" onClick={handleGoogleSingIN}>
                                     <span className='mx-2'>
                                         <i className='fab fa-google'></i>
                                     </span>
                                     Google
                                 </Button>
-                            </div>
-                            <div className="col-md-6 text-center my-2">
-                                <Button variant="primary">
-                                    <span className='mx-2'>
-                                        <i className='fab fa-facebook'></i>
-                                    </span>
-                                    Facebook
-                                </Button>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
 
