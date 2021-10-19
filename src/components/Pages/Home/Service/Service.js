@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Service.css'
 
+
 const Service = (props) => {
     const { id, doctor, price, image, service } = props.service;
-    console.log(props.service);
+
     return (
         <div className='col-md-4 col-sm-6 my-3'>
             <div className='py-2 service-shadow'>
                 <div className='text-center my-4'>
-                    <img src={image} alt='' className='img-fluid w-50' />
+                    <img src={image} alt='' className='img-fluid w-75' />
                 </div>
                 <div className='text-center my-3'>
                     <h5>{service}</h5>
