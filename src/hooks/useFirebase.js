@@ -50,7 +50,13 @@ const useFirebase = () => {
     // set user name
     const setUserName = (name) => {
         updateProfile(auth.currentUser, { displayName: name })
-            .then((result) => { }
+            .then(() => {
+
+                const newUser = { ...user, displayName: name } // recommend
+                setUser(newUser)
+
+                // window.location.reload()
+            }
             )
             .catch((error) => {
                 console.log(error.message);

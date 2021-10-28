@@ -58,6 +58,7 @@ const Login = () => {
         if (isRegister) {
             userLogin(email, password)
                 .then((result) => {
+                    setIsLoading(true)
                     setUser(result.user)
                     history.push(redirect_url);
                 })
@@ -72,6 +73,7 @@ const Login = () => {
         else {
             userRegister(email, password, name)
                 .then((result) => {
+                    setIsLoading(true)
                     setUserName(name);
                     setUser(result.user)
                     history.push(redirect_url);
@@ -94,6 +96,7 @@ const Login = () => {
     const handleGoogleSingIN = () => {
         singInUsingGoogle()
             .then((result) => {
+                setIsLoading(true)
                 setUser(result.user)
                 history.push(redirect_url);
                 // console.log(result.user);

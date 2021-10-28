@@ -31,7 +31,7 @@ const TopMenu = () => {
                             <Nav.Link as={Link} to="/career" active className='fw-bold  text-primary mx-2'>Career</Nav.Link>
 
                             {
-                                user?.email ?
+                                user?.displayName ?
                                     <Link to='/login'>
                                         <Button variant='danger' onClick={logOut}>Log out</Button>
                                     </Link>
@@ -41,7 +41,7 @@ const TopMenu = () => {
                                     </Link>
                             }
                             {
-                                user?.email &&
+                                user?.displayName &&
                                 <Nav.Link className='fw-bold  text-primary mx-2'>
                                     <span className='text-danger mx-2'><i className="fas fa-user-check"></i></span>
                                     {user?.displayName}
