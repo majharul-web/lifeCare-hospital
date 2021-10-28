@@ -31,28 +31,12 @@ const useFirebase = () => {
 
     // user resister
     const userRegister = (email, password, name) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                // verifyEmail();
-                setUserName(name);
-            })
-            .catch((error) => {
-                console.log(error.message);
-            });
+        return createUserWithEmailAndPassword(auth, email, password)
     };
 
     // user login
     const userLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-            })
-            .catch((error) => {
-                console.log(error.message);
-            });
+        return signInWithEmailAndPassword(auth, email, password)
     };
 
     // // verify email
@@ -76,7 +60,6 @@ const useFirebase = () => {
 
     // logout
     const logOut = () => {
-        setIsLoading(true);
         signOut(auth)
             .then(() => {
 
@@ -84,7 +67,6 @@ const useFirebase = () => {
             .catch((error) => {
                 console.log(error);
             })
-            .finally(() => setIsLoading(false));
     };
 
     // observe user
@@ -102,11 +84,14 @@ const useFirebase = () => {
 
     return {
         user,
+        setUser,
         singInUsingGoogle,
         userRegister,
         userLogin,
         logOut,
-        isLoading
+        setIsLoading,
+        isLoading,
+        setUserName
     }
 };
 

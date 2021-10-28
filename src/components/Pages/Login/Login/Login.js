@@ -5,7 +5,7 @@ import useAuth from '../../../../hooks/useAuth';
 
 
 const Login = () => {
-    const { singInUsingGoogle, userRegister, userLogin } = useAuth();
+    const { singInUsingGoogle, setUser, userRegister, userLogin, setUserName, setIsLoading } = useAuth();
 
     // all state
     const [name, setName] = useState('');
@@ -34,6 +34,15 @@ const Login = () => {
         setIsRegister(e.target.checked);
     }
 
+    // ------------------redirect
+
+    const location = useLocation();
+    const history = useHistory();
+    // console.log("came from", location.state?.from);
+    const redirect_url = location.state?.from || "/home";
+
+    // ------------------redirect
+
     // handle from submit
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -47,11 +56,34 @@ const Login = () => {
 
         // manual user register/logIn process
         if (isRegister) {
-            userLogin(email, password);
+            userLogin(email, password)
+                .then((result) => {
+                    setUser(result.user)
+                    history.push(redirect_url);
+                })
+                .catch((error) => {
+                    console.log(error.message);
+                })
+                .finally(() => {
+                    setIsLoading(false)
+                })
             setError('')
         }
         else {
-            userRegister(email, password, name);
+            userRegister(email, password, name)
+                .then((result) => {
+                    setUserName(name);
+                    setUser(result.user)
+                    history.push(redirect_url);
+                    // verifyEmail();
+
+                })
+                .catch((error) => {
+                    console.log(error.message);
+                })
+                .finally(() => {
+                    setIsLoading(false)
+                })
             setError('')
         }
 
@@ -59,19 +91,18 @@ const Login = () => {
     }
 
 
-    // ------------------redirect
-    const location = useLocation();
-    const history = useHistory();
-
-    // console.log("came from", location.state?.from);
-
-    const redirect_url = location.state?.from || "/home";
-
     const handleGoogleSingIN = () => {
-        singInUsingGoogle().then((result) => {
-            history.push(redirect_url);
-            // console.log(result.user);
-        });
+        singInUsingGoogle()
+            .then((result) => {
+                setUser(result.user)
+                history.push(redirect_url);
+                // console.log(result.user);
+            })
+            .catch((err) => console.log(err))
+            .finally(() => {
+                setIsLoading(false)
+            })
+
     };
 
 
@@ -133,7 +164,7 @@ const Login = () => {
                                     </span>
                                     Google
                                 </Button>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
 

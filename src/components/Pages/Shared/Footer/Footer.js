@@ -41,15 +41,15 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h4>Contact Info</h4>
                         <h6>
-                             <span>
-                                 <i className="fas fa-phone"></i>
-                            </span> 
+                            <span>
+                                <i className="fas fa-phone"></i>
+                            </span>
                             01747615357
                         </h6>
                         <h6>
                             <span>
-                                 <i class="fas fa-envelope-square"></i>
-                            </span> 
+                                <i className="fas fa-envelope-square"></i>
+                            </span>
                             lifeCare.home@gmail.com
                         </h6>
 
